@@ -1,0 +1,94 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="0mm"
+        android:layout_marginTop="1mm"
+        android:text="Cambie fuentes y colores" />
+
+    <EditText
+        android:id="@+id/ETexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/Texto"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5mm"
+        android:layout_marginLeft="0mm"
+        android:hint="Mensaje" />
+
+    <Button
+        android:id="@+id/Mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/ETexto"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5mm"
+        android:layout_marginLeft="0mm"
+        android:text="Mostrar" />
+
+    <TextView
+        android:id="@+id/Texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/Mostrar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10mm"
+        android:layout_marginLeft="0mm"/>
+
+    <Button
+        android:id="@+id/Cambiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/Texto2"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10mm"
+        android:layout_marginLeft="7mm"
+        android:text="Cambiar"
+        android:onClick="cambiartexto"/>
+
+    <Button
+        android:id="@+id/Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/Texto2"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10mm"
+        android:layout_marginLeft="27mm"
+        android:text="Colorear"
+        android:onClick="cambiarcolor"/>
+
+    <Button
+        android:id="@+id/Restaurar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/Cambiar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1mm"
+        android:layout_marginLeft="0mm"
+        android:text="Restaurar"
+        android:onClick="restaurar"/>
+
+</RelativeLayout>
