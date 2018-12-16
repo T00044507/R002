@@ -15,17 +15,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void cambiartexto(View view) {
-            TextView Texto = (TextView) findViewById(R.id.Texto);
+            TextView Texto = (TextView) findViewById(R.id.texto);
             Texto.setText("Hola mi amor");
         }
 
         public void cambiarcolor(View view) {
-            TextView Texto = (TextView) findViewById(R.id.Texto);
+            TextView Texto = (TextView) findViewById(R.id.texto);
             Texto.setTextColor(Color.MAGENTA);
         }
 
         public void restaurar(View view) {
-            TextView Texto = (TextView) findViewById(R.id.Texto);
+            TextView Texto = (TextView) findViewById(R.id.texto);
             Texto.setText("Hola mundo");
             Texto.setTextColor(Color.GRAY);
         }
